@@ -1,0 +1,9 @@
+{
+    "pkg": "example",
+    "version": "1.0.0",
+    "name": "Example Sensors",
+    "description": "An example for a sensor package",
+    "dependencies": [
+        "requests>=2"
+    ]
+}

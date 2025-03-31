@@ -1,0 +1,3 @@
+# Only used for providing suggestions in your IDE.
+# Requirements installed by simplic-insights-collector are set in manifest.json
+requests>=2
