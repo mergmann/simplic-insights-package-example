@@ -3,7 +3,7 @@ import requests
 from typing import Self
 
 from core.classes import Measurement, Metric, SensorBase, SensorDef, SettingsBase, Status
-from core.config import ConfigDict
+from core.config import ReadDict
 from core.util import cast
 
 
@@ -12,7 +12,7 @@ class RandomSettings(SettingsBase):
     Configuration for the sensor
     """
     @classmethod
-    def deserialize(cls, conf: ConfigDict) -> Self:
+    def deserialize(cls, conf: ReadDict) -> Self:
         # Python boolean expressions that will be evaluated
         unhealthy = conf['unhealthy'].as_str()
         degraded = conf['degraded'].as_str()
@@ -76,7 +76,7 @@ class HTTPRequestSettings(SettingsBase):
     Configuration for the sensor
     """
     @classmethod
-    def deserialize(cls, conf: ConfigDict) -> Self:
+    def deserialize(cls, conf: ReadDict) -> Self:
         # Target URL
         url = conf['url'].as_str()
 

@@ -1,6 +1,6 @@
 {
     "pkg": "example",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "Example Sensors",
     "description": "An example for a sensor package",
     "dependencies": [
