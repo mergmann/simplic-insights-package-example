@@ -58,6 +58,7 @@ class RandomSensor(SensorBase[RandomSettings]):
         else:
             status = Status.HEALTHY
 
+        # These are additional values corresponding of a unit and value
         metrics = [
             # Attach the random value to the measurement
             Metric('random', 'integer', value),
@@ -108,6 +109,7 @@ class HTTPRequestSensor(SensorBase[HTTPRequestSettings]):
         else:
             status = Status.UNKNOWN
 
+        # These are additional values corresponding of a unit and value
         metrics = [
             # Attach the URL which was requested
             Metric('url', 'url', self.settings.url),
